@@ -1,3 +1,4 @@
+<img width="1672" height="941" alt="Ravana’s Ten-Headed AI Command Center" src="https://github.com/user-attachments/assets/cc2095bf-b119-481a-b6aa-b018e8cbee27" />
 # RAVANA — AI Agentic HUD
 
 **RAVANA** is an AI agentic HUD and multi-agent command centre by **CodesbyFebin**. It brings voice commands, specialist agents, model routing, live system telemetry, task and memory panels, and human-reviewed actions into a single cyberpunk dashboard.
@@ -18,6 +19,7 @@ Explore the project: [Ravana-Multi-Agent-HUD](https://github.com/CodesbyFebin/Ra
 - **Controls:** freeze switch, visual themes, audio toggle, and responsive navigation dock.
 
 ## Screens and panels
+<img width="2155" height="730" alt="RAVANA Multi-Agent AI HUD Showcase" src="https://github.com/user-attachments/assets/e948b573-21cb-4cd3-af1b-f2c351f2b358" />
 
 The HUD organizes controls into overview, DevOps and infrastructure, trading and finance, communications and intelligence, executive tools, agents and skills, models, tasks, and memory. The interface is designed as a single-pane AI agent dashboard for observing and interacting with an agentic workflow.
 
