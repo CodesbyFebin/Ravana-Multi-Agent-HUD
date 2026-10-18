@@ -1,7 +1,7 @@
 {
-  "name": "react-example",
+  "name": "ravana-multi-agent-hud",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
@@ -34,8 +34,7 @@
     "@types/ws": "^8.18.2",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.4.0",
     "tsx": "^4.21.0",
     "typescript": "^7.0.2"
   }
-}
