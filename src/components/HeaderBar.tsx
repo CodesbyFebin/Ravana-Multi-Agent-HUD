@@ -86,10 +86,10 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
         <div className="flex items-center gap-2">
           <div className="w-2.5 h-2.5 bg-cyan-400 rotate-45 border border-cyan-300 shadow-[0_0_8px_#00ffc8]" />
           <span className="font-orbitron font-bold text-sm tracking-wider text-cyan-300">
-            :BRO <span className="text-cyan-600 font-light">// RAVANA</span>
+            RAVANA <span className="text-cyan-600 font-light">// CODESBYFEBIN</span>
           </span>
           <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-950/90 text-cyan-400 border border-cyan-500/40 font-mono">
-            OS v4.2
+            AI AGENTIC HUD
           </span>
         </div>
 
