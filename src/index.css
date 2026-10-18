@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #050b14;
+    --bg-panel: rgba(8, 18, 30, 0.92);
+    --border-cyan: #00ffc8;
+    --border-dim: rgba(0, 255, 200, 0.25);
+    --text-primary: #e0f7fa;
+    --text-secondary: #7fd4c1;
+    --accent-cyan: #00ffc8;
+    --accent-blue: #00e5ff;
+    --accent-amber: #ffaa00;
+    --accent-red: #ff3366;
+    --accent-green: #00ff88;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  h1, h2, h3, .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Cyberpunk angular cut corner styles */
+.hud-corner {
+  clip-path: polygon(
+    0 10px,
+    10px 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+}
+
+.hud-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-dim);
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.07);
+}
+
+.hud-panel-active {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+}
+
+/* CRT Scanline overlay */
+.scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 200, 0.02) 2px,
+    rgba(0, 255, 200, 0.02) 4px
+  );
+  pointer-events: none;
+}
+
+/* Custom cyber scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(5, 12, 20, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 200, 0.4);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 200, 0.8);
+}
+
+/* Subtle CSS pulse animation for agent status indicator on high-priority tasks */
+@keyframes status-pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 4px rgba(245, 158, 11, 0.45);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.85), 0 0 4px rgba(239, 68, 68, 0.5);
+  }
+}
+
+.status-pulse-high {
+  animation: status-pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+

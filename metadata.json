@@ -1,0 +1,6 @@
+{
+  "name": ":BRO — Multi-Agent Voice Command Centre",
+  "description": "Futuristic cyberpunk HUD and neural orchestration layer with Three.js reactor iris, voice commands, multi-LLM routing, and adversarial review anti-hallucination firewall.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
